@@ -32,7 +32,7 @@ $(function(){
             password: $('#form_land [name=password]').val()
         }
         //注册提交提交
-        $.post('http://www.liulongbin.top:3007/api/reguser',data,function(res) {
+        $.post('/api/reguser',data,function(res) {
             if (res.status !==0 ) {
                 return console.log(layer.msg(res.message));
             }
