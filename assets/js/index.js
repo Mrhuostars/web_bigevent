@@ -29,8 +29,8 @@
  }
  //渲染头像函数
  function renderAvatar(user) {
-     var user = user.nickname || user.username
-     $('#welcome').html('您好！&nbsp;&nbsp'+ user)
+     var name = user.nickname || user.username
+     $('#welcome').html('您好！&nbsp;&nbsp'+ name)
      if(user.user_pic == null) {
          $('.layui-nav-img').hide()
          $('.text-avatar')
